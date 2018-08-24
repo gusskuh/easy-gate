@@ -65,7 +65,7 @@ const FeatureCard = ({ subHead, icon, text1, text2 }) => (
 
 const ImageCard = ({ src }) => (
   <Box
-    width={1/3}
+    width={[1, 1/3]}
     px={2}
     py={2}
   >
@@ -91,7 +91,7 @@ const IndexPage = () => (
           style={{height: '100%', objectFit: 'cover'}}
         />
       </Absolute>
-      <Flex style={{ minHeight: '100vh', alignItems: 'center' }}>
+      <Flex style={{ minHeight: '80vh', alignItems: 'center' }}>
         <Container color={'white'}>
           <Heading textAlign={'center'}  fontSize={7}>Easy Gate</Heading>
           <Heading fontSize={4} textAlign={'center'}>שער בטיחות להתקנה עצמית</Heading>

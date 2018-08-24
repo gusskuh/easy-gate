@@ -91,15 +91,30 @@ const IndexPage = () => (
           style={{height: '100%', objectFit: 'cover'}}
         />
       </Absolute>
-      <Flex style={{ minHeight: '80vh', alignItems: 'center' }}>
-        <Container color={'white'}>
-          <Heading textAlign={'center'}  fontSize={7}>Easy Gate</Heading>
-          <Heading fontSize={4} textAlign={'center'}>שער בטיחות להתקנה עצמית</Heading>
-          <Flex py={10} alignItems='center' justifyContent={'center'}>
-            <Button is={'a'} href={'#orderNow'} fontSize={3}>הזמן עכשיו</Button>
+        <Container color={'white'} py={[3,6]}>
+          <Flex flexWrap='wrap-reverse' style={{ alignItems: 'center' }}>
+            <Box width={[1, 1/2]}>
+              <Embed>
+                <iframe
+                  title={'Demo'}
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/bHwRW5LLM1s?rel=0"
+                  frameBorder="0"
+                  allow="autoplay; encrypted-media"
+                  allowFullScreen
+                />
+              </Embed>
+            </Box>
+            <Box width={[1, 1/2]}>
+              <Heading textAlign={['center', 'right']} color={['black']} fontSize={7}>Easy Gate</Heading>
+              <Heading fontSize={4} textAlign={['center', 'right']} color={['black']}>שער בטיחות להתקנה עצמית</Heading>
+              <Flex py={10} alignItems='center' justifyContent={['center', 'flex-end']}>
+                <Button is={'a'} href={'#orderNow'} fontSize={3}>הזמן עכשיו</Button>
+              </Flex>
+            </Box>
           </Flex>
         </Container>
-      </Flex>
     </Relative>
 
     <Container
@@ -203,23 +218,6 @@ const IndexPage = () => (
             />
           </Flex>
         </Box>
-      </Container>
-    </Box>
-
-
-    <Box py={3} bg={'gray'}>
-      <Container maxWidth={600}>
-        <Embed>
-          <iframe
-            title={'Demo'}
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/bHwRW5LLM1s?rel=0"
-            frameBorder="0"
-            allow="autoplay; encrypted-media"
-            allowFullScreen
-          />
-        </Embed>
       </Container>
     </Box>
 

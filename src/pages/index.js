@@ -3,6 +3,7 @@ import {
   Heading,
   Container,
   BackgroundImage,
+  Divider,
   Card,
   Embed,
   Text,
@@ -42,6 +43,20 @@ import stairsOpen from '../images/stairs-open.jpg';
 
 import coverPhoto from '../images/cover-photo.jpg';
 
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
+
+import Slider from 'react-slick';
+
+const sliderSettings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+};
+
 const FeatureCard = ({ subHead, icon, text1, text2 }) => (
   <Box
     width={[1, 1/2, 1/3]}
@@ -65,11 +80,10 @@ const FeatureCard = ({ subHead, icon, text1, text2 }) => (
 
 const ImageCard = ({ src }) => (
   <Box
-    width={[1, 1/3]}
     px={2}
     py={2}
   >
-    <Card p={3} >
+    <Card p={1} >
       <BackgroundImage
         ratio={1}
         src={src}
@@ -187,42 +201,48 @@ const IndexPage = () => (
 
     <Box>
       <Container>
-        <Box py={3}>
-          <Heading style={{ direction: 'rtl', textAlign: 'center' }} fontSize={5}>גלרייה</Heading>
-          <Flex flexWrap='wrap' justifyContent={'center'} alignItems={'center'}>
-            <ImageCard
-              src={roomClosed}
-            />
-            <ImageCard
-              src={roomOpen}
-            />
-            <ImageCard
-              src={roomOpenUp}
-            />
+        <Flex justifyContent={'center'}>
+          <Box py={3} width={[1, 1/2]}>
+            <Heading style={{ direction: 'rtl', textAlign: 'center' }} fontSize={5}>גלרייה</Heading>
+            <Slider {...sliderSettings}>
+              <ImageCard
+                src={roomClosed}
+              />
+              <ImageCard
+                src={roomOpen}
+              />
+              <ImageCard
+                src={roomOpenUp}
+              />
 
-            <ImageCard
-              src={kitchenClosed}
-            />
-            <ImageCard
-              src={kitchenOpen}
-            />
-            <ImageCard
-              src={kitchenOpenUp}
-            />
+              <ImageCard
+                src={kitchenClosed}
+              />
+              <ImageCard
+                src={kitchenOpen}
+              />
+              <ImageCard
+                src={kitchenOpenUp}
+              />
 
-            <ImageCard
-              src={stairsClosed}
-            />
-            <ImageCard
-              src={stairsOpen}
-            />
-          </Flex>
-        </Box>
+              <ImageCard
+                src={stairsClosed}
+              />
+              <ImageCard
+                src={stairsOpen}
+              />
+            </Slider>
+          </Box>
+        </Flex>
       </Container>
     </Box>
 
     <Box py={3} id="orderNow">
       <Container>
+        <Divider
+          w={3}
+          borderColor='gray'
+        />
         <Heading style={{ direction: 'rtl', textAlign: 'center' }} fontSize={5}>כמה זה עולה?</Heading>
         <Heading style={{ direction: 'rtl', textAlign: 'center' }} fontSize={4}>מחיר יחידה - 399 ש"ח</Heading>
         <Subhead style={{ direction: 'rtl', textAlign: 'center' }} fontSize={3} p={2}>

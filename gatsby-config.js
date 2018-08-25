@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'EasyGate - השער החכם',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

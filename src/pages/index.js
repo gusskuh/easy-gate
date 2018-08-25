@@ -107,23 +107,10 @@ const IndexPage = () => (
       </Absolute>
         <Container color={'white'} py={[3,6]}>
           <Flex flexWrap='wrap-reverse' style={{ alignItems: 'center' }}>
-            <Box width={[1, 1/2]}>
-              <Embed>
-                <iframe
-                  title={'Demo'}
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/bHwRW5LLM1s?rel=0"
-                  frameBorder="0"
-                  allow="autoplay; encrypted-media"
-                  allowFullScreen
-                />
-              </Embed>
-            </Box>
-            <Box width={[1, 1/2]}>
-              <Heading textAlign={['center', 'right']} color={['black']} fontSize={7}>Easy Gate</Heading>
-              <Heading fontSize={4} textAlign={['center', 'right']} color={['black']}>שער בטיחות להתקנה עצמית</Heading>
-              <Flex py={10} alignItems='center' justifyContent={['center', 'flex-end']}>
+            <Box width={1}>
+              <Heading textAlign={'center'} color={'white'} fontSize={7}>Easy Gate</Heading>
+              <Heading fontSize={4} textAlign={'center'} color={'white'}>שער בטיחות להתקנה עצמית</Heading>
+              <Flex py={10} alignItems='center' justifyContent={'center'}>
                 <Button is={'a'} href={'#orderNow'} fontSize={3}>הזמן עכשיו</Button>
               </Flex>
             </Box>
@@ -131,15 +118,50 @@ const IndexPage = () => (
         </Container>
     </Relative>
 
-    <Container
-      py={50}
-    >
+    <Container py={5}>
       <Flex flexWrap='wrap' alignItems={'center'}>
-        <Box px={2} py={2} width={1/3}>
+        <Box px={2} py={2} width={[1, 4/7]}>
+          <Heading style={{ direction: 'rtl' }} fontSize={5}>מה זה EasyGate?</Heading>
+          <Text
+            style={{ direction: 'rtl' }}
+            lineHeight={2}
+            fontSize={3}
+          >
+            שער בטיחות מעץ המתאים לפתחים במידה 70 עד 100 ס"מ.
+            השער פותח עם פטנט יחודי קל להתקנה (מצריך קדיחה) ונוח לשימוש.
+          </Text>
+        </Box>
+        <Box px={2} py={2} width={[1, 3/7]}>
+          <Embed>
+            <iframe
+              title={'Demo'}
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/bHwRW5LLM1s?rel=0"
+              frameBorder="0"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+            />
+          </Embed>
+        </Box>
+      </Flex>
+    </Container>
+
+    <Container>
+      <Divider
+        borderColor='gray'
+      />
+    </Container>
+
+    <Container
+      py={5}
+    >
+      <Flex flexWrap='wrap-reverse' alignItems={'center'}>
+        <Box px={2} py={2} width={[1, 1/3]}>
           <Image src={stairsClosed}/>
         </Box>
-        <Box px={2} py={2} width={2/3}>
-          <Heading style={{ direction: 'rtl' }} fontSize={5}>מה זה EasyGate?</Heading>
+        <Box px={2} py={2} width={[1, 2/3]}>
+          <Heading style={{ direction: 'rtl' }} fontSize={5}>מה מיוחד בEasyGate?</Heading>
           <Text
             style={{ direction: 'rtl' }}
             lineHeight={2}
@@ -240,7 +262,6 @@ const IndexPage = () => (
     <Box py={3} id="orderNow">
       <Container>
         <Divider
-          w={3}
           borderColor='gray'
         />
         <Heading style={{ direction: 'rtl', textAlign: 'center' }} fontSize={5}>כמה זה עולה?</Heading>

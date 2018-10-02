@@ -1,10 +1,11 @@
 import React from 'react'
 import { Toolbar, NavLink, theme } from 'rebass'
+import EasyGate from '../components/EasyGate'
 
 const Header = ({ siteTitle }) => (
   <Toolbar bg={theme.colors.blue} color={'white'}>
     <NavLink>
-      Easy Gate
+      <EasyGate />
     </NavLink>
     <NavLink href={'#orderNow'} ml='auto'>
       הזמן עכשיו

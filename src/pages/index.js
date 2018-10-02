@@ -47,6 +47,7 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
 import Slider from 'react-slick';
+import EasyGate from '../components/EasyGate'
 
 const sliderSettings = {
   dots: true,
@@ -108,7 +109,7 @@ const IndexPage = () => (
         <Container color={'white'} py={[3,6]}>
           <Flex flexWrap='wrap-reverse' style={{ alignItems: 'center' }}>
             <Box width={1}>
-              <Heading textAlign={'center'} color={'white'} fontSize={7}>Easy Gate</Heading>
+              <Heading textAlign={'center'} color={'white'} fontSize={7}><EasyGate /></Heading>
               <Heading fontSize={4} textAlign={'center'} color={'white'}>שער בטיחות להתקנה עצמית</Heading>
               <Flex py={10} alignItems='center' justifyContent={'center'}>
                 <Button is={'a'} href={'#orderNow'} fontSize={3}>הזמן עכשיו</Button>
@@ -121,7 +122,7 @@ const IndexPage = () => (
     <Container py={5}>
       <Flex flexWrap='wrap' alignItems={'center'}>
         <Box px={2} py={2} width={[1, 4/7]}>
-          <Heading style={{ direction: 'rtl' }} fontSize={5}>מה זה EasyGate?</Heading>
+          <Heading style={{ direction: 'rtl' }} fontSize={5}>מה זה <EasyGate />?</Heading>
           <Text
             style={{ direction: 'rtl' }}
             lineHeight={2}
@@ -161,17 +162,17 @@ const IndexPage = () => (
           <Image src={stairsClosed}/>
         </Box>
         <Box px={2} py={2} width={[1, 2/3]}>
-          <Heading style={{ direction: 'rtl' }} fontSize={5}>מה מיוחד בEasyGate?</Heading>
+          <Heading style={{ direction: 'rtl' }} fontSize={5}>מה מיוחד ב<EasyGate />?</Heading>
           <Text
             style={{ direction: 'rtl' }}
             lineHeight={2}
             fontSize={3}
           >
-            EasyGate הוא מוצר מקורי המציע פתרון קל ונוח לחסימת פתחים ופתרון יחודי לחסימת מדרגות.
+            <EasyGate /> הוא מוצר מקורי המציע פתרון קל ונוח לחסימת פתחים ופתרון יחודי לחסימת מדרגות.
 
             היוזמה למוצר באה מהצורך לחסום מעבר בקרבת מדרגות, ביחוד בתחילת מהלך מדרגות עולה.
 
-            הפתרונות הקיימים במקרים רבים לא מתאימים. וכאן  EasyGate  נכנס לתמונה!
+            הפתרונות הקיימים במקרים רבים לא מתאימים.<br/> וכאן  <EasyGate />  נכנס לתמונה!
           </Text>
         </Box>
       </Flex>
@@ -208,10 +209,6 @@ const IndexPage = () => (
               text1={'בשער רגיל בזמן פתיחה או סגירה יש לפנות את מלוא רדיוס הסיבוב של השער דבר הגורם\n' +
               'לצעוד צעד אחד או יותר קדימה או אחורה ובחזרה.'}
               text2={'המבנה  המיוחד של השער מקטין את רדיוס הסיבוב של השער דבר המאפשר פתיחה וסגירה ללא צעדים מיותרים.   עובדה זו הופכת את המעבר בשער לנוחה יותר ומהירה יותר.'}
-            />
-            <FeatureCard
-              subHead={'מתאים גם להתקנה בכניסה לחדר ובמעלה המדרגות'}
-              icon={faHandPointLeft}
             />
           </Flex>
           <Box  py={3} style={{textAlign: 'center'}}>
@@ -264,9 +261,9 @@ const IndexPage = () => (
         <Divider
           borderColor='gray'
         />
-        <Heading style={{ direction: 'rtl', textAlign: 'center' }} fontSize={5}>כמה זה עולה?</Heading>
-        <Heading style={{ direction: 'rtl', textAlign: 'center' }} fontSize={4}>מחיר יחידה - 399 ש"ח</Heading>
-        <Subhead style={{ direction: 'rtl', textAlign: 'center' }} fontSize={3} p={2}>
+        <Heading style={{ direction: 'rtl', textAlign: 'center' }} fontSize={3}>כמה זה עולה?</Heading>
+        <Heading style={{ direction: 'rtl', textAlign: 'center' }} fontSize={3}>מחיר יחידה - 399 ש"ח</Heading>
+        <Subhead style={{ direction: 'rtl', textAlign: 'center' }} fontSize={2} p={2}>
           + דמי משלוח 50 ש"ח (יש אפשרות לאיסוף עצמי)
         </Subhead>
 

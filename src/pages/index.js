@@ -25,6 +25,8 @@ import {
   faUnlock,
 } from '@fortawesome/free-solid-svg-icons'
 
+import SimpleMap from '../components/googleMap'
+
 
 
 import Layout from '../components/layout'
@@ -101,7 +103,7 @@ const IndexPage = () => (
         style={{height: '100%'}}>
         <Image
           src={coverPhoto}
-          alt=''
+          alt='שער בטיחות לילדים'
           width={1}
           style={{height: '100%', objectFit: 'cover'}}
         />
@@ -109,8 +111,8 @@ const IndexPage = () => (
         <Container color={'white'} py={[3,6]}>
           <Flex flexWrap='wrap-reverse' style={{ alignItems: 'center' }}>
             <Box width={1}>
-              <Heading textAlign={'center'} color={'white'} fontSize={7}><EasyGate /></Heading>
-              <Heading fontSize={4} textAlign={'center'} color={'white'}>שער בטיחות להתקנה עצמית</Heading>
+              <Heading  textAlign={'center'} color={'white'} fontSize={7}><EasyGate /></Heading>
+              <Heading is='h1' fontSize={4} textAlign={'center'} color={'white'}>שער בטיחות לילדים - בהתקנה עצמית</Heading>
               <Flex py={10} alignItems='center' justifyContent={'center'}>
                 <Button is={'a'} href={'#orderNow'} fontSize={3}>הזמן עכשיו</Button>
               </Flex>
@@ -128,7 +130,7 @@ const IndexPage = () => (
             lineHeight={2}
             fontSize={3}
           >
-            שער בטיחות מעץ המתאים לפתחים במידה 70 עד 100 ס"מ.
+            שער בטיחות לילדים מעץ המתאים לפתחים במידה 70 עד 100 ס"מ.
             השער פותח עם פטנט יחודי קל להתקנה (מצריך קדיחה) ונוח לשימוש.
           </Text>
         </Box>
@@ -159,7 +161,7 @@ const IndexPage = () => (
     >
       <Flex flexWrap='wrap-reverse' alignItems={'center'}>
         <Box px={2} py={2} width={[1, 1/3]}>
-          <Image src={stairsClosed}/>
+          <Image alt='שער בטיחות לילדים' src={stairsClosed}/>
         </Box>
         <Box px={2} py={2} width={[1, 2/3]}>
           <Heading style={{ direction: 'rtl' }} fontSize={5}>מה מיוחד ב<EasyGate />?</Heading>
@@ -168,11 +170,11 @@ const IndexPage = () => (
             lineHeight={2}
             fontSize={3}
           >
-            <EasyGate /> הוא מוצר מקורי המציע פתרון קל ונוח לחסימת פתחים ופתרון יחודי לחסימת מדרגות.
+            <EasyGate /> הוא שער בטיחות לילדים מקורי המציע פתרון קל ונוח לחסימת פתחים ופתרון יחודי לחסימת מדרגות.
 
-            היוזמה למוצר באה מהצורך לחסום מעבר בקרבת מדרגות, ביחוד בתחילת מהלך מדרגות עולה.
+            היוזמה לשער הבטיחות באה מהצורך לחסום מעבר בקרבת מדרגות, ביחוד בתחילת מהלך מדרגות עולה.
 
-            הפתרונות הקיימים במקרים רבים לא מתאימים.<br/> וכאן  <EasyGate />  נכנס לתמונה!
+            שערי הבטיחות הקיימים במקרים רבים לא מתאימים.<br/> וכאן  <EasyGate />  נכנס לתמונה!
           </Text>
         </Box>
       </Flex>
@@ -180,19 +182,19 @@ const IndexPage = () => (
     <Box bg={'gray'}>
       <Container>
         <Box py={3} id={'features'}>
-          <Heading style={{ direction: 'rtl', textAlign: 'center' }} fontSize={5}>תכונות יחודיות לשער</Heading>
+          <Heading style={{ direction: 'rtl', textAlign: 'center' }} fontSize={5}> תכונות יחודיות לשער בטיחות לילדים</Heading>
           <Flex flexWrap='wrap' justifyContent={'center'} alignItems={'center'} style={{ direction: 'rtl', textAlign: 'center' }}>
             <FeatureCard
-              subHead={'פתיחת השער וסגירתו ביד אחת'}
+              subHead={'פתיחת שער בטיחות לילדים וסגירתו ביד אחת'}
               icon={faHandPointLeft}
-              text1={'הפשטות והאמינות של מנגנון הנעילה מאפשר תיפעול השער, כלומר פתיחה וסגירה, ביד אחת בלבד.'}
+              text1={'הפשטות והאמינות של מנגנון הנעילה מאפשר תיפעול שער הבטיחות, כלומר פתיחה וסגירה, ביד אחת בלבד.'}
               text2={'זו תכונה חשובה מאחר שבמקרים רבים רק יד אחת פנויה לתפעול השער כך שאין צורך לפנות את היד השניה שאינה פנויה באותו רגע.'}
             />
             <FeatureCard
               subHead={'מתאים להתקנה ליד מדרגות'}
               icon={faHome}
-              text1={'המבנה המיוחד של השער מאפשר פתיחת השער לכיוון מעלה המדרגות דבר שלא מתאפשר בסוגים אחרים של שערים.'}
-              text2={'היכולת הזאת של פתיחה לכיוון מעלה המדרגות מאפשר גם הצמדת השער לקיר, כך שבמצב פתוח או בזמן שהשער לא בשימוש, השער צמוד לקיר ולא מפריע לעליה ולירידה במדרגות,\n' +
+              text1={'המבנה המיוחד של שער הבטיחות לילדים מאפשר פתיחת שער בטיחות לילדים לכיוון מעלה המדרגות דבר שלא מתאפשר בסוגים אחרים של שערים.'}
+              text2={'היכולת הזאת של פתיחה לכיוון מעלה המדרגות מאפשר גם הצמדת השער לקיר, כך שבמצב פתוח או בזמן ששער בטיחות לילדים לא בשימוש, שער הבטיחות צמוד לקיר ולא מפריע לעליה ולירידה במדרגות,\n' +
               '\n' +
               'וזה יתרון חשוב מאוד.'}
             />
@@ -200,15 +202,15 @@ const IndexPage = () => (
               subHead={'נפתח וננעל בקליק'}
               icon={faUnlock}
               text1={'מנגנון הנעילה הפשוט והאמין מאפשר פתיחה וסגירה קלה ומהירה של השער.'}
-              text2={'זו תכונה חשובה ביותר כי בהרבה מיקרים יש צורך לעבור את השער לעיתים תכופות ולהשאירו סגור.\n' +
-              '                הקלות והמהירות של פתיחת השער וסגירתו מקלים מאוד על המעברים התכופים.'}
+              text2={'זו תכונה חשובה ביותר כי בהרבה מיקרים יש צורך לעבור את שער בטיחות לילדים לעיתים תכופות ולהשאירו סגור.\n' +
+              '                הקלות והמהירות של פתיחת שער בטיחות לילדים וסגירתו מקלים מאוד על המעברים התכופים.'}
             />
             <FeatureCard
               subHead={'רדיוס תפעול קטן'}
               icon={faCircleNotch}
-              text1={'בשער רגיל בזמן פתיחה או סגירה יש לפנות את מלוא רדיוס הסיבוב של השער דבר הגורם\n' +
+              text1={'בשער רגיל בזמן פתיחה או סגירה יש לפנות את מלוא רדיוס הסיבוב של שער בטיחות דבר הגורם\n' +
               'לצעוד צעד אחד או יותר קדימה או אחורה ובחזרה.'}
-              text2={'המבנה  המיוחד של השער מקטין את רדיוס הסיבוב של השער דבר המאפשר פתיחה וסגירה ללא צעדים מיותרים.   עובדה זו הופכת את המעבר בשער לנוחה יותר ומהירה יותר.'}
+              text2={'המבנה  המיוחד של שער בטיחות לילדים מקטין את רדיוס הסיבוב של שער הבטיחות דבר המאפשר פתיחה וסגירה ללא צעדים מיותרים.   עובדה זו הופכת את המעבר בשער הבטיחות לנוחה יותר ומהירה יותר.'}
             />
           </Flex>
           <Box  py={3} style={{textAlign: 'center'}}>
@@ -225,29 +227,37 @@ const IndexPage = () => (
             <Heading style={{ direction: 'rtl', textAlign: 'center' }} fontSize={5}>גלרייה</Heading>
             <Slider {...sliderSettings}>
               <ImageCard
+               alt='שער בטיחות חכם'
                 src={roomClosed}
               />
               <ImageCard
+               alt='שער בטיחות לילדים'
                 src={roomOpen}
               />
               <ImageCard
+                alt='השער הבטיחות החכם'
                 src={roomOpenUp}
               />
 
               <ImageCard
+               alt='שער הבטיחות החכם לילדים'
                 src={kitchenClosed}
               />
               <ImageCard
+               alt='שער בטיחות במצב פתוח'
                 src={kitchenOpen}
               />
               <ImageCard
+               alt='שער בטיחות לילדים מטבח פתוח'
                 src={kitchenOpenUp}
               />
 
               <ImageCard
+                alt='בגרם המדרגות שער בטיחות סגור'
                 src={stairsClosed}
               />
               <ImageCard
+                alt='בגרם המדרגות שער בטיחות לילדים פתוח'
                 src={stairsOpen}
               />
             </Slider>
@@ -276,6 +286,36 @@ const IndexPage = () => (
           marginHeight="0"
           marginWidth="0"
         />
+      </Container>
+    </Box>
+
+    <Box py={3} id="contactUs" >
+      <Container>
+        <Divider
+            borderColor='gray'
+          />
+        <Heading style={{ direction: 'rtl', textAlign: 'center' }} fontSize={3}>צור קשר</Heading>
+        <Subhead style={{ direction: 'rtl', textAlign: 'center' }} fontSize={2} p={2}>
+          בטלפון: <span type='tel'>055-555555</span>
+        </Subhead>
+        <Subhead style={{ direction: 'rtl', textAlign: 'center' }} fontSize={2} p={2}>
+          במייל: <a href="mailto:gmail@gmail.com">gmail@gmail.com</a>
+        </Subhead>
+        <Subhead style={{ direction: 'rtl', textAlign: 'center', marginBottom: '15px' }} fontSize={2} p={2}>
+         כתובת: ההסתדרות 22, הוד השרון.
+        </Subhead>
+        <SimpleMap />
+      </Container>
+    </Box>
+
+    <Box py={3} id="contactUs">
+      <Container>
+        <Divider
+            borderColor='gray'
+          />
+        <Subhead style={{ direction: 'rtl', textAlign: 'center' }} fontSize={1} p={2}>
+         כל הזכויות שמורות ל &copy; easygate.co 
+        </Subhead>
       </Container>
     </Box>
 

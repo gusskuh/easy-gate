@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'EasyGate - השער החכם',
+    title: 'EasyGate - שער בטיחות לילדים',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

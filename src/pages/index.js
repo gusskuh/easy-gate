@@ -296,13 +296,13 @@ const IndexPage = () => (
           />
         <Heading style={{ direction: 'rtl', textAlign: 'center' }} fontSize={3}>צור קשר</Heading>
         <Subhead style={{ direction: 'rtl', textAlign: 'center' }} fontSize={2} p={2}>
-          בטלפון: <span type='tel'>055-555555</span>
+          בטלפון: <span type='tel'>054-808-5509</span>
         </Subhead>
         <Subhead style={{ direction: 'rtl', textAlign: 'center' }} fontSize={2} p={2}>
-          במייל: <a href="mailto:gmail@gmail.com">gmail@gmail.com</a>
+          במייל: <a href="mailto:gmail@gmail.com">moshe5005@gmail.com</a>
         </Subhead>
         <Subhead style={{ direction: 'rtl', textAlign: 'center', marginBottom: '15px' }} fontSize={2} p={2}>
-         כתובת: ההסתדרות 22, הוד השרון.
+         כתובת: הבנים 22, הוד השרון.
         </Subhead>
         <SimpleMap />
       </Container>

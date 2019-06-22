@@ -23,8 +23,8 @@ const Layout = ({ children, data }) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'שער בטיחות לילדים' },
-            { name: 'keywords', content: 'שער בטיחות לילדים,שער בטיחות', something' },
+            { name: 'description', content: 'Sample' },
+            { name: 'keywords', content: 'שער בטיחות, שער בטיחות לילדים' },
           ]}
         >
           <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700&amp;subset=hebrew" rel="stylesheet" />

@@ -1,4 +1,5 @@
 import React from 'react'
+
 import {
   Heading,
   Container,
@@ -50,6 +51,10 @@ import 'slick-carousel/slick/slick-theme.css'
 
 import Slider from 'react-slick';
 import EasyGate from '../components/EasyGate';
+import ReactGA from 'react-ga';
+
+ReactGA.initialize('UA-141790633-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 const sliderSettings = {
   dots: true,

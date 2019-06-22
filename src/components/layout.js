@@ -24,7 +24,7 @@ const Layout = ({ children, data }) => (
           title={data.site.siteMetadata.title}
           meta={[
             { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            { name: 'keywords', content: 'שער בטיחות לילדים, something' },
           ]}
         >
           <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700&amp;subset=hebrew" rel="stylesheet" />

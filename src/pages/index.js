@@ -299,7 +299,7 @@ const IndexPage = () => (
           />
         <Heading style={{ direction: 'rtl', textAlign: 'center' }} fontSize={3}>צור קשר</Heading>
         <Subhead style={{ direction: 'rtl', textAlign: 'center' }} fontSize={2} p={2}>
-          בטלפון: <span type='tel'>054-808-5509</span>
+          בטלפון: <span type='tel'><a href="tel:+972548085509">054-808-5509</a></span>
         </Subhead>
         <Subhead style={{ direction: 'rtl', textAlign: 'center' }} fontSize={2} p={2}>
           במייל: <a href="mailto:gmail@gmail.com">moshe5005@gmail.com</a>

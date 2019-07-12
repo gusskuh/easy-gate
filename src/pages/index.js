@@ -302,7 +302,7 @@ const IndexPage = () => (
           בטלפון: <span type='tel'><a href="tel:+972548085509">054-808-5509</a></span>
         </Subhead>
         <Subhead style={{ direction: 'rtl', textAlign: 'center' }} fontSize={2} p={2}>
-          במייל: <a href="mailto:gmail@gmail.com">moshe5005@gmail.com</a>
+          במייל: <a href="mailto:myeasygate@gmail.com">myeasygate@gmail.com</a>
         </Subhead>
         <Subhead style={{ direction: 'rtl', textAlign: 'center', marginBottom: '15px' }} fontSize={2} p={2}>
          כתובת: הבנים 22, הוד השרון.

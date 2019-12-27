@@ -18,7 +18,6 @@ i18n
   .use(reactI18nextModule)
   .init({
     resources,
-    lng: "en",
     fallbackLng: "en",
 
     keySeparator: false, // we do not use keys in form messages.welcome

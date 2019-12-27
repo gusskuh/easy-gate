@@ -7,7 +7,7 @@ import { Provider } from 'rebass';
 import Header from './header'
 import './layout.css'
 
-const Layout = ({ children, data }) => (
+const Layout = ({ children, data, changeDirection, isLtr }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -30,7 +30,7 @@ const Layout = ({ children, data }) => (
           <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700&amp;subset=hebrew" rel="stylesheet" />
           <html lang="en" />
         </Helmet>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header isLtr={isLtr} changeDirection={changeDirection} siteTitle={data.site.siteMetadata.title} />
         <Provider
           theme={{
             fonts: {
